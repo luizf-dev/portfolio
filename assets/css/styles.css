@@ -1,0 +1,327 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+
+
+/*===== BASE =====================================================*/
+html,body{
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body{
+  
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*===== CLASS CSS ================================================*/
+
+
+/*===== HEADER INICIO ============================================*/
+
+#header a i{
+  color: #fff;
+}
+
+#header a i:hover{
+  color: green;
+}
+
+
+nav.navbar-transparent{
+  background: rgba(0,0,0,0.2);
+  border-bottom: 1px solid #fff; 
+  padding: 20px; 
+}
+
+.navbar-light .nav-item .nav-link{
+  color: #fff;
+  font-weight: 900;
+  font-size: 1.4em;
+}
+
+.navbar-light .nav-item .nav-link:hover{
+  color: green;
+}
+
+.navbar-light .navbar-toggler{
+  color: rgba(0,0,0,0.5);
+  border-color: white;
+}
+
+#header .divisor{
+  width: 1px;
+  background: green;
+  margin: 12px 15px;
+}
+
+/*===== HEADER FIM =============================================*/
+
+
+/*===== HOME BANNER AREA INICIO ============================================*/
+
+section{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  padding: 110px 100px;
+}
+
+section p{
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 35px;
+  padding: 0 20px;
+  line-height: 2;
+}
+
+.banner-area{
+  position: relative;
+  justify-content: center;
+  min-height: 100vh;
+  color: #fff;
+  text-align: center;
+}
+
+.banner-area .banner-img{
+  background-image: url(../img/home-img-2.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  z-index: -1;
+}
+
+.banner-area .banner-img::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .8;
+}
+
+.banner-area h1{
+  font-size: 5em;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: #fff;
+  font-weight: 900;
+  text-shadow: 2px 2px 1px #000;
+}
+
+.banner-area span{
+  font-size: 1.2em;
+  text-shadow: 2px 2px 1px #000;
+}
+
+.banner-area h2{
+  font-size: 2em;
+  color: #fff;
+  font-weight: 900;
+  text-shadow: 2px 2px 1px #000;
+}
+
+.banner-area .btn{
+  margin-top: 20px;
+  width: 200px;
+  border-radius: 100px;
+  color: #000;
+  background-color: #fff;
+}
+
+.banner-area .btn:hover{
+  background-color: green;
+}
+
+.banner-area a i{
+  color: #fff;
+}
+
+.banner-area a i:hover{
+  color: green;
+}
+
+/*=======FOOTER ================================================*/
+
+#footer{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
+
+
+
+
+
+/* ===== MEDIA QUERIES=====*/
+
+/*Dispositivos extra pequenos (telefones modo retrato, menos de 576px)*/
+@media (max-width: 575.98px) {
+
+  nav.navbar-transparent{
+    background: rgba(0,0,0);
+    border-bottom: 1px solid #fff; 
+    padding: 20px; 
+  }
+  
+  .banner-area{
+    position: relative;
+    justify-content: center;
+    min-height: 80vh;
+    text-align: center;
+    font-weight: 900;
+  }
+
+  .banner-area .banner-img{
+    background:#000;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+  }
+
+  .banner-area h1{
+    font-size: 1.8em;
+    text-shadow: none;
+  }
+
+  .banner-area span{
+    font-size: 1.7em;
+    text-shadow: none;
+  }
+
+  .banner-area h2{
+    font-size: 0.8em;
+    text-shadow: none;
+    color: #fff;
+  } 
+
+  #footer{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+  }
+
+  #footer a, h5{
+    font-size: 1em;
+  }
+}
+
+/*Pequenos dispositivos (telefones de paisagem, 576px e acima)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  
+  .banner-area{
+    position: relative;
+    justify-content: center;
+    min-height: 100%;
+    color: #fff;
+    text-align: center;
+  }
+
+  .banner-area .banner-img{
+    background-image: url(../img/home-img-2.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+  }
+  
+
+  .banner-area h1{
+    font-size: 1.9em;
+  }
+
+  .banner-area span{
+    font-size: 1.3em;
+  }
+
+  .banner-area h2{
+    font-size: 1.3em;
+  }
+
+  #footer{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+  }
+
+  
+}
+
+/*Dispositivos médios (tablets, 768px e superior)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  .banner-area{
+    position: relative;
+    justify-content: center;
+    min-height: 100%;
+    color: #fff;
+    text-align: center;
+  }
+
+  .banner-area .banner-img{
+    background-image: url(../img/home-img-2.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+  }
+ 
+  .banner-area h1{
+    font-size: 1.5em;
+  }
+
+  .banner-area span{
+    font-size: 1em;
+  }
+
+  .banner-area h2{
+    font-size: 1.3em;
+  }
+
+  #footer{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+  }
+  
+
+  
+}
+
+/*Dispositivos grandes (desktops, 992px e superior)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+  
+}
+
+/*Dispositivos extra grandes (áreas de trabalho grandes, 1200px e acima)*/
+@media (min-width: 1200px) {
+
+  
+}
+
+@media(max-width: 1000px){
+  section{
+    padding: 100px 50px;
+  }
+  
+}
+
+@media(max-width: 600px){
+
+  section{
+    padding: 125px 30px;
+  }
+
+  
+}
+
+
