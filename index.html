@@ -20,7 +20,7 @@
   <body>
     <!--===== HEADER =====-->
     <header id="header">
-        <nav class=" navbar navbar-expand-md navbar-light fixed-top navbar-transparent">
+        <nav id="nav" onmouseout="corbg()" onmouseover="mudacor()"; class=" navbar navbar-expand-md navbar-light fixed-top navbar-transparent">
           <div class="container">
             <a href="index.html" class="navbar-brand">
                 <i class="fas fa-code fa-2x"></i>
@@ -102,7 +102,24 @@
     </div>
     <!--===== FOOTER =======-->
 
-    <!--********************************************************************-->          
+    <!--********************************************************************-->  
+    
+    <script>    
+
+      function mudacor(){
+          var element = document.getElementById('nav');
+          if(element.onmouseover){
+              element.style.backgroundColor = 'black';
+          }
+      }
+
+      function corbg(){
+          var element = document.getElementById('nav');
+          if(element.onmouseout){
+              element.style.backgroundColor = 'rgba(0,0,0,0.1)';
+          }
+      }
+  </script>
       
     <!--===== JAVASCRIPT =====-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
